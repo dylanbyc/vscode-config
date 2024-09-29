@@ -1,0 +1,271 @@
+{
+    /**
+    * Better Defaults
+    **/
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": "single",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "on",
+    "window.customTitleBarVisibility": "never",
+    /**
+    * Silence The Noise
+    */
+    "breadcrumbs.enabled": false,
+    "scm.diffDecorations": "none",
+    "editor.hover.enabled": false,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": false,
+    "editor.colorDecorators": false,
+    "git.decorations.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": "off",
+    "editor.selectionHighlight": true,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": "off",
+    "problems.decorations.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.lineHeight": 0,
+    // "editor.suggestFontSize": 13,
+    // "editor.suggestLineHeight": 13,
+    // "terminal.integrated.fontSize": 13,
+    "terminal.integrated.lineHeight": 0,
+    // Find
+    "search.useIgnoreFiles": false,
+    /**
+    * Code
+    **/
+    // Include "-" in word selection.
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "files.associations": {
+        ".php_cs": "php",
+        ".php_cs.dist": "php",
+        "*.sql": "jinja-sql",
+        "*.rmd": "markdown"
+    },
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#282c34",
+        "statusBar.noFolderBackground": "#282c34",
+        "statusBar.debuggingBackground": "#282c34",
+        "statusBar.foreground": "#abb2bf",
+        "statusBar.debuggingForeground": "#abb2bf",
+        "quickInputList.focusBackground": "#635D97"
+    },
+    "git.autofetch": true,
+    "git.mergeEditor": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.marp.enableHtml": true,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "editor.inlineSuggest.enabled": true,
+    "win-ca.inject": "append",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.interpreter.infoVisibility": "always",
+    "github.copilot.enable": {
+        "quarto": true,
+        "*": true,
+        "plaintext": "true",
+        "markdown": "true",
+        "scminput": false
+    },
+    "r.rterm.mac": "/Library/Frameworks/Python.framework/Versions/3.10/bin/radian",
+    "r.plot.useHttpgd": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "r.bracketedPaste": true,
+    "r.lsp.diagnostics": false,
+    "github.copilot.advanced": {},
+    "r.rpath.mac": "/opt/homebrew/Cellar/r/4.4.0_1/lib/R/bin/R",
+    "[r]": {
+        "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",<>/"
+    },
+    "indentRainbow.includedLanguages": [],
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 2,
+    "interactiveWindow.executeWithShiftEnter": true,
+    "[jinja-sql]": {
+        "editor.defaultFormatter": "innoverio.vscode-dbt-power-user"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    // vim settings
+    "editor.formatOnSave": true,
+    "editor.suggest.insertMode": "replace",
+    "terminal.integrated.fontFamily": "MonoLisa",
+    "editor.linkedEditing": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 2,
+    "launch": {},
+    "[json]": {},
+    "zenMode.hideLineNumbers": false,
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                ":w"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        // Stay in visual mode while indenting
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        // Move selected lines while staying in visual mode
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+        // toggle comment selection
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        }
+    ],
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#282c34",
+        "#abb2bf"
+    ], // Dark background, light foreground
+    "vim.statusBarColors.insert": [
+        "#61afef",
+        "#282c34"
+    ], // Blue background, dark foreground
+    "vim.statusBarColors.visual": [
+        "#c678dd",
+        "#282c34"
+    ], // Purple background, dark foreground
+    "vim.statusBarColors.visualline": [
+        "#c678dd",
+        "#282c34"
+    ], // Purple background, dark foreground
+    "vim.statusBarColors.visualblock": [
+        "#98c379",
+        "#282c34"
+    ], // Green background, dark foreground
+    "vim.statusBarColors.replace": [
+        "#e06c75",
+        "#282c34"
+    ],
+    "editor.guides.indentation": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.iconTheme": "material-icon-theme",
+    "quarto.cells.background.light": "#F5F5F5",
+    "quarto.cells.background.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 3,
+    "workbench.colorTheme": "Dracula Pro",
+    "editor.stickyScroll.enabled": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+        "trafficLightPosition": {
+            "x": 17,
+            "y": 12
+        },
+        // This gets rid of that horid white frame around the electron window...
+        "transparent": true,
+        // This removes the less-horid, but still yucky stacking window shadow...
+        "hasShadow": false
+    },
+    "apc.stylesheet": {
+        "*": "font-family:  Dank Mono;"
+    },
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "makefile.configureOnOpen": true,
+    "update.mode": "none",
+    "http.proxyAuthorization": null
+}

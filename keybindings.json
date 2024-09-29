@@ -1,0 +1,260 @@
+// Place your key bindings in this file to override the defaults
+[
+    // keybindings for R terminal (radian included)
+    {
+        "key": "shift+cmd+m",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": " %>%"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "Alt+-",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": " <- "
+        },
+        "when": "terminalFocus"
+    },
+    // keybinding for qmd and R
+    {
+        "key": "shift+cmd+m",
+        "command": "type",
+        "args": {
+            "text": " %>%"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "Alt+-",
+        "command": "type",
+        "args": {
+            "text": " <- "
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "-r.executeInTerminal",
+        "when": "editorFocus && editorLangId == 'r'"
+    },
+    /**
+    * Panels
+    **/
+    {
+        "key": "cmd+k cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "cmd+k cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "cmd+k cmd+x",
+        "command": "workbench.extensions.action.showEnabledExtensions"
+    },
+    {
+        "key": "cmd+k cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // OTHER KEYBINDINGS
+    // NAVIGATION
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // File Explorer
+    {
+        "key": "d",
+        "command": "duplicate.execute",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // Fold/Unfold
+    {
+        "key": "shift+cmd+[",
+        "command": "editor.fold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "editor.unfold",
+        "when": "editorFocus"
+    },
+    /**
+    * Multi-Cursor
+    **/
+    {
+        "key": "cmd+backspace",
+        "command": "editor.action.moveSelectionToPreviousFindMatch",
+        "when": "editorFocus && editorHasMultipleSelections"
+    },
+    {
+        "key": "cmd+k cmd+d",
+        "command": "editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus && editorHasMultipleSelections"
+    },
+    {
+        "key": "cmd+right",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorFocus && editorHasSelection"
+    },
+    /**
+    * Split Panels
+    **/
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.joinAllGroups",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.increaseViewSize",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "editorFocus"
+    },
+    /**
+    * Toggle Font Size
+    **/
+    {
+        "key": "cmd+k cmd+k",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "fontSize",
+            "value": [
+                {
+                    "editor.fontSize": 20,
+                    "editor.lineHeight": 30
+                },
+                {
+                    "editor.fontSize": 13,
+                    "editor.lineHeight": 0
+                }
+            ]
+        }
+    },
+    {
+        // Toggle font
+        "key": "cmd+k cmd+f",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "fontFamily",
+            "value": [
+                {
+                    "apc.stylesheet": {
+                        "*": "font-family: MonoLisa;"
+                    },
+                    "editor.fontSize": 12
+                },
+                {
+                    "apc.stylesheet": {
+                        "*": "font-family:  Dank Mono;"
+                    },
+                    "editor.fontSize": 13
+                }
+            ]
+        }
+    },
+    /**
+    * IntelliSense
+    **/
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+k cmd+enter",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "namespaceResolver.import"
+    },
+    // start: hide everything and just show code
+    {
+        "key": "cmd+k cmd+c", // whatever keybinding you want
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.togglePanel",
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.focusActiveEditorGroup"
+            ]
+        }
+    },
+    {
+        "key": "cmd+k cmd+c", // note same keybinding as above
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarVisible && !panelVisible"
+    },
+    {
+        "key": "cmd+k cmd +c", // note same keybinding as above
+        "command": "workbench.action.togglePanel",
+        "when": "panelVisible && !sideBarVisible"
+    }
+    // end: hide everything and just show code
+]
